@@ -7,12 +7,15 @@
     <title>About Me</title>
 </head>
 <body>
-    <h1>About Me</h1>
-    <a href="/Home"><button>Home</button></a>
-    <br>
-    <br>
-    <a href="/AboutMe"><Button>About Me</Button></a>
-    <a href="/Skills"><Button>Skills</Button></a>
-    <a href="/Hobbies"><Button>Hobbies</Button></a>
+    <nav>
+        <a href="/"><button>About Me</button></a>
+        <a href="/Skills"><button>Skills</button></a>
+        <a href="/Hobbies"><button>Hobbies</button></a> 
+    </nav>
+
+    <div>
+        <h2>About Me</h2>
+        <p>{{ $aboutme }}</p>
+    </div>
 </body>
 </html>

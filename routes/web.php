@@ -1,19 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SkillsController;
+use App\Http\Controllers\HobbiesController;
+use App\Http\Controllers\AboutMeController;
 
-Route::get('/', function () {
-    return view('Home');
-});
-
-Route::get('/AboutMe', function () {
-    return view('AboutMe');
-});
-
-Route::get('/Skills', function () {
-    return view('Skills');
-});
-
-Route::get('/Hobbies', function () {
-    return view('Hobbies');
-});
+Route::get('/', [AboutMeController::class, 'aboutme']);
+Route::get('/AboutMe', [AboutMeController::class, 'aboutme']);
+Route::get('/Skills', [SkillsController::class, 'skills']);
+Route::get('/Hobbies', [HobbiesController::class, 'hobbies']);
