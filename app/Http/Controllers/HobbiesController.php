@@ -8,7 +8,7 @@ class HobbiesController extends Controller
 {
     public function hobbies()
     {
-        $hobbies = ["Eating", "Sleeping", "Watching","Eating Again", "Gaming", "Also Eating", "And Eating", "Another Eating", "More Eating", "Lastly Eating"];
+        $hobbies = ["Playing Drums", "Editing", "Fixing motorcycle", "Playing Guitar", "Playing games", "Traveling", "Photography", "Cooking", "Riding motorcycles and cars", "Eating"];
         return view('Hobbies', compact('hobbies'));
     }
 }
