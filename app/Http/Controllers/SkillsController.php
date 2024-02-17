@@ -8,7 +8,7 @@ class SkillsController extends Controller
 {
     public function skills()
     {
-        $skills = ["I am an expert in doing nothing", "I can sleep for 24hrs a day", "I can eat all you can", "HTML"];
+        $skills = ["I am currently enhancing my editing skills, so I can say I can edit videos and photos", "I can also fix motorcycles ", "I can eat a lot of foods :)", "Also have slight skill on web developing"];
         return view('Skills', compact('skills'));
     }
 }
